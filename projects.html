@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>My Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- link it with main.css-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main">
+        <header>
+          <h1>Projects</h1>
+        </header>
+        <div class="container">
+          <!-- Project 1 -->
+          <div class="row">
+            <div class="col-md-7">
+              <img class="img-fluid1" src="./images/inhaled.png" alt />
+            </div>
+
+            <div class="col-md-5">
+              <h3>
+                Inhaled
+              </h3>
+              <p>
+                Developed at BostonHacks 2019, Inhaled allows asthma patients
+                and their doctors to track their medication and respiratory
+                well-being, providing the ability to create the most effective
+                regime for each patient.
+              </p>
+
+              <p>
+                Frontend is built with Vue.js and backend is built with
+                firebase. Weather and Gmap API are integrated in weather view
+                for patients to refer and determine the safety to go out. View
+                more on Devpost
+              </p>
+              <a
+                class="inhaled_view"
+                href="https://devpost.com/software/inhaled"
+                >View More on Devpost</a
+              >
+              <a
+                class="inhaled_view"
+                href="https://github.com/zwang3583/inhale-ed"
+              >
+                / Github</a
+              >
+            </div>
+          </div>
+          <hr />
+
+          <!-- project 2 -->
+          <div class="row">
+            <div class="col-md-7">
+              <img class="img-fluid2" src="./images/wordcloud.png" alt />
+              <div class="col-md-5">
+                <h3>Song Lyrics Analysis</h3>
+
+                <p>
+                  Sentiment analysis of my favorite bands' lyrics. Pulled and
+                  cleaned lyrics data by using Genius.com API and web-scraping
+                  with BeautifulSoup.
+                </p>
+                <p>
+                  Used wordcloud library in Python to generate word cloud for
+                  each band and used NLTK's sentiment analyzer to generate
+                  normalized unidimensional metric of sentiment, finding the
+                  positivity, negativity, and neutrality of the lyrics by each
+                  artist, and illustrated the result by plotting the graph.
+                </p>
+
+                <a
+                  class="lyrics_view"
+                  href="https://github.com/Yunhan0816/band-lyrics-analysis"
+                  >View More on Github</a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <!-- project 3-->
+          <div class="row">
+            <div class="col-md-7">
+              <img class="img-fluid2" src="./images/ameelio.png" alt />
+              <div class="col-md-5">
+                <h3>Ameelio Connect</h3>
+
+                <p>
+                  Ameelio Connect is a website built for inmates and regular
+                  users (their family and friends) the access to have
+                  video/message communication, and facility administrators to
+                  manage the connections. Users can sign up, add inmates,
+                  schedule to connect with inmates and video chat when their
+                  request has been approved by an admin.
+                </p>
+                <p>
+                  Used Vue.js as frontend and firebase as backend.
+                </p>
+
+                <a
+                  class="lyrics_view"
+                  href="https://github.com/Yunhan0816/band-lyrics-analysis"
+                  >View More on Github</a
+                >
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="copyright">
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      if ("addEventListener" in window) {
+        window.addEventListener("load", function() {
+          document.body.className = document.body.className.replace(
+            /\bis-preload\b/,
+            ""
+          );
+        });
+        document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
+          ? " is-ie"
+          : "";
+      }
+    </script>
+    <style>
+      .divider {
+        line-height: 50pt;
+      }
+      .img-fluid1 {
+        width: 700px;
+        height: auto;
+      }
+      .inhaled_view {
+        font-weight: 900;
+      }
+    </style>
+  </body>
+</html>
