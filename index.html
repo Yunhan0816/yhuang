@@ -20,7 +20,9 @@
       <!-- Main -->
       <section id="main">
         <header>
-          <span class="avatar"><img src="images/avatar.jpeg" alt="" /> </span>
+          <span class="avatar"
+            ><img class="img" src="images/avatar.jpeg" alt="" />
+          </span>
           <h1>Hannah Huang</h1>
           <p>Software Engineer</p>
           <p>Computer Science Student @Boston University</p>
@@ -94,7 +96,7 @@
             </li>
           </ul>
         </footer>
-        <footer>
+        <footer class="footers">
           <ul class="links">
             <h1>
               <a href="about.html">About</a>
@@ -134,5 +136,23 @@
           : "";
       }
     </script>
+
+    <style>
+      .img {
+        width: 20%;
+        height: auto;
+      }
+      .links {
+        /* overflow: scroll; */
+        font-size: auto;
+        /* margin: 60px;
+        margin-top: 50px; */
+      }
+      .footers {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+      }
+    </style>
   </body>
 </html>
